@@ -4,6 +4,7 @@ import { jsonHandler } from "./middleware/json-handler";
 import { statusResponseHandler } from "./middleware/status-response-handler";
 import bodyParser = require("body-parser");
 import { delayHandler } from "./middleware/delay-handler";
+import { Request, Response, NextFunction } from "express";
 const express = require('express');
 
 const SERVER_PORT = process.env.MOCK_PORT || 8000;

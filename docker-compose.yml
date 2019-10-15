@@ -19,6 +19,8 @@ services:
   mock-service:
     build: .
     container_name: edeka-or-backend
+    ports:
+      - 127.0.0.1:8081:8000
     volumes:
       - type: bind
         source: ./www
